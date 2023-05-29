@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+
+.header {
+	border-bottom: 1px solid $gray-line;
+	padding: 40px 0;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (max-width: 600px) {
+			flex-direction: column;
+			.header__cart {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	&__logo {
+		display: flex;
+
+		img {
+			margin-right: 15px;
+		}
+
+		h1 {
+			color: #181818;
+			font-size: 24px;
+			letter-spacing: 1%;
+			text-transform: uppercase;
+			font-weight: 800;
+		}
+
+		p {
+			color: #7b7b7b;
+		}
+	}
+}
+.button--cart {
+	display: flex;
+	align-items: center;
+	background: $orange;
+	color: $white;
+	padding: 12px 15px;
+	border-radius: 30px;
+	position: relative;
+
+	.icon {
+		margin-left: 30px;
+	}
+	span {
+		margin-right: 10px;
+	}
+}
+
+.button--cart::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.25);
+}
