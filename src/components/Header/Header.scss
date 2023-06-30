@@ -13,6 +13,10 @@
 			flex-direction: column;
 			.header__cart {
 				margin-bottom: 20px;
+				margin-right: 44px;
+			}
+			.header__logo {
+				margin-bottom: 20px;
 			}
 		}
 	}
@@ -58,7 +62,7 @@
 	content: '';
 	position: absolute;
 	top: 50%;
-	right: 50%;
+	right: 47%;
 	transform: translateY(-50%);
 	width: 1px;
 	height: 25px;

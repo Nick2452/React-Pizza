@@ -70,7 +70,7 @@
 			display: flex;
 			align-items: center;
 			margin-right: 15px;
-			width: 10%;
+			width: 15%;
 
 			img {
 				width: 80px;
@@ -113,6 +113,7 @@
 
 			b {
 				font-size: 22px;
+				padding: 0 7px;
 			}
 		}
 
@@ -133,7 +134,6 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
-			width: 4%;
 
 			.button {
 				border-color: darken($color: $gray-line, $amount: 10);

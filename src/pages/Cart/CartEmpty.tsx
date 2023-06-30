@@ -1,7 +1,8 @@
 import React from 'react'
 
-import emptyCart from '../../image/cartEmpty.png'
-export const CartEmpty = () => {
+import emptyCart from '../../image/empty-cart.png'
+
+export const CartEmpty: React.FC = () => {
 	return (
 		<>
 			<div className='cart cart--empty'>

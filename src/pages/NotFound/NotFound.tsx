@@ -2,7 +2,7 @@ import React from 'react'
 
 import './NotFound.scss'
 
-export const NotFound = () => {
+export const NotFound: React.FC = () => {
 	return (
 		<div className='notFound'>
 			<h1 className='notFound__title'>

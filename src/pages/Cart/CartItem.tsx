@@ -1,14 +1,37 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addItem, minusItem, removeItem } from '../../redux/slices/cartSlice'
+import {
+	CartItemType,
+	addItem,
+	minusItem,
+	removeItem,
+} from '../../redux/slices/cartSlice'
 
-export const CartItem = ({ id, types, title, price, sizes, count, imageUrl }) => {
+type CartItemProps = {
+	id: string
+	types: string
+	title: string
+	price: number
+	sizes: number
+	count: number
+	imageUrl: string
+}
+
+export const CartItem: React.FC<CartItemProps> = ({
+	id,
+	types,
+	title,
+	price,
+	sizes,
+	count,
+	imageUrl,
+}) => {
 	const dispatch = useDispatch()
 	const onClickPlus = () => {
 		dispatch(
 			addItem({
 				id,
-			})
+			} as CartItemType)
 		)
 	}
 	const onClickMinus = () => {

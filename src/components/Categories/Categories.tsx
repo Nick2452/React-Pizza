@@ -1,7 +1,13 @@
 import React, { useState } from 'react'
 
 import './Categories.scss'
-export const Categories = ({ value, onChangeCategory }) => {
+
+type CategoriesProps = {
+	value: number
+	onChangeCategory: (i: number) => void
+}
+
+export const Categories: React.FC<CategoriesProps> = ({ value, onChangeCategory }) => {
 	const categories = ['Все', 'Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые']
 
 	return (

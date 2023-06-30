@@ -1,0 +1,55 @@
+@import '../../styles/variables.scss';
+
+.img {
+	width: 300px;
+	height: auto;
+}
+.price {
+	font-size: 20px;
+	font-weight: 600;
+	padding: 10px 0;
+}
+.pizza__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&-descr {
+		font-size: 22px;
+		font-weight: 600;
+		margin-right: 100px;
+		max-width: 700px;
+	}
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	&__back {
+		padding: 10px 45px;
+		background-color: $orange;
+		border-radius: 30px;
+		min-width: 100px;
+		text-align: center;
+		cursor: pointer;
+		transition: background-color $duration ease-in-out, border-color $duration ease-in-out;
+		border: 1px solid transparent;
+		&:hover {
+			background-color: darken($orange, 50%);
+		}
+
+		&:active {
+			background-color: darken($orange, 20%);
+			transform: translateY(1px);
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.pizza__info-descr {
+		font-size: 19px;
+		margin-right: 0;
+	}
+}
